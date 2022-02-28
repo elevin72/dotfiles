@@ -1,0 +1,10 @@
+#!/bin/sh
+
+case $BLOCK_BUTTON in
+	1) setsid -f "$TERMINAL" -e btop ;;
+	3) "$TERMINAL" -e "$EDITOR" "$0" ;;
+esac
+
+TEMP=$(sensors | awk '/Package/ { print $4 }')
+RPM=$(sensors |  awk '/fan/ { print $2,$3 }')
+echo "$TEMP   |   $RPM"

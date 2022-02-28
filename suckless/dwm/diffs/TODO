@@ -1,0 +1,13 @@
+Fix swallow patch!!!!
+Maybe start from swallow fork and patch from there?
+Get Scratchpad working with alacritty. (Is there an option outside of dwm?)
+
+splitstatus -- RTFM
+find correct attach______
+change tag indiicator, it's to small and ugly
+Patch single Tagset. Its massive, and may take a bit of work
+Set Alt Tags, maybe 9 is too many
+
+Who gets selective fake full screen
+
+Install Xmenu for layoutmenu

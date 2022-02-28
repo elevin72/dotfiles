@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+
+dunstify "Test script worked!"

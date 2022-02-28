@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+file=/sys/class/leds/tpacpi::kbd_backlight/brightness
+status=$(sed -n '1p' < $file)
+if [[ status -eq 0 ]]; then
+    echo 2 | tee $file
+else
+    echo 0 | tee $file
+fi

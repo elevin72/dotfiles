@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+setxkbmap -option caps:escape
+# xinput set-prop 'Synaptics TM3471-020' 'libinput Accel Speed' 0.4
+xset r rate 230 40

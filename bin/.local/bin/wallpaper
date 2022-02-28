@@ -1,0 +1,10 @@
+#!/bin/sh
+if [  -z "$1" ]
+then
+    echo "No argument given!"
+    exit
+else
+    cp $1 ~/.local/share/wallpaper/wall.jpg
+    xwallpaper --zoom ~/.local/share/wallpaper/wall.jpg
+fi
+

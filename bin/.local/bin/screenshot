@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+case "$(echo -e "Selection\nFullscreen\nCopy" | dmenu -c -p "Screenshot:" -l 3)" in
+    Copy) scrot -z --select --line mode=edge -e 'xclip -selection clipboard -t image/png -i $f && dunstify "Screenshot copied to clipboard" && rm $f';;
+    Fullscreen) scrot -z -e'mv $f ~/media/shots && dunstify "$f"';;
+    Selection) scrot -z --select --line mode=edge -e 'mv $f ~/media/shots && dunstify "$f"';;
+esac
