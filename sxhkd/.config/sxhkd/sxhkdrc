@@ -9,7 +9,7 @@ super + Return
 
 # power menu
 super + shift + c
-    ~/.config/i3/scripts/powermenu
+    ~/.local/bin/power
 
 # toggle keyboard language
 alt + space

@@ -4,7 +4,7 @@
 # bash $HOME/.dwm/.fehbg
 
 # kill if already running
-killall -9 picom xfce4-power-manager dunst sxhkd nm-applet blueman-applet optimus-manager-qt
+killall -9 picom xfce4-power-manager dunst sxhkd nm-applet blueberry-tray optimus-manager-qt
 
 # Launch Conkeww
 # sed -i "s/colors\/color-.*/colors\/color-one-dark.yuck\")/g" $HOME/.config/conkeww/eww.yuck
@@ -24,7 +24,7 @@ sxhkd &
 unclutter &
 
 # start bluetooth
-blueman-applet &
+blueberry-tray &
 
 # Launch notification daemon
 # dunst -config $HOME/.config/dunst/dunstrc &
@@ -32,8 +32,10 @@ blueman-applet &
 # start compositor and power manager
 xfce4-power-manager &
 
-# display timeout settings
-xset s 480 dpms 600 600 600
+# some x settings
+xset s 900
+xset dpms 600
+xset b off
 
 feh --bg-fill /home/eli/.config/wallpaper.jpg
 

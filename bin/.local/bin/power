@@ -1,8 +1,8 @@
-#!/bin/zsh
-case "$(echo -e "Shutdown\nRestart\nLogout\nSuspend\nLock" | dmenu -c -p "Power:" -l 5)" in
-        Shutdown) exec systemctl poweroff;;
-        Restart) exec systemctl reboot;;
-        Logout) killall dwm;;
-        Suspend) exec systemctl suspend;;
-        Lock) slock;;
+#!/usr/bin/env bash
+case "$(echo -e " Lock\n Shutdown\n Reboot\n Logout\n Suspend\n" | dmenu -c -p "Power:" -l 5)" in
+        " Shutdown") exec systemctl poweroff;;
+        " Reboot") exec systemctl reboot;;
+        " Logout") exec i3-msg exit;;
+        " Suspend") exec systemctl suspend;;
+        " Lock") exec ~/.config/i3/scripts/blur-lock;;
 esac
