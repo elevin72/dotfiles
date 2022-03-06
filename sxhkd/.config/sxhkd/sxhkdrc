@@ -5,7 +5,7 @@ super + Escape
 
 # Launch Terminal
 super + Return
-    wezterm
+    alacritty
 
 # power menu
 super + shift + c
@@ -17,7 +17,7 @@ alt + space
 
 # Launch Applications
 super + shift + {f,w,c,d,t,s}
-    {thunar,brave,code,discord,wezterm,xfce4-settings-manager}
+    {thunar,brave,code,discord,alacritty,xfce4-settings-manager}
 
 super + d
     rofi -modi drun -show drun -config ~/.config/rofi/rofidmenu.rasi

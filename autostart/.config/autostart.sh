@@ -33,8 +33,8 @@ blueberry-tray &
 xfce4-power-manager &
 
 # some x settings
-xset s 900
-xset dpms 600
+xset s 1200
+xset dpms 1140 1190 1200
 xset b off
 
 feh --bg-fill /home/eli/.config/wallpaper.jpg

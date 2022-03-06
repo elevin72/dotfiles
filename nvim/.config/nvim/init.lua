@@ -162,6 +162,9 @@ vim.g.gruvbox_material_disable_italic_comment = 0
 
 vim.cmd [[colorscheme gruvbox-material]]
 
+vim.cmd[[hi Normal guibg=NONE ctermbg=NONE]]
+vim.cmd[[hi clear EndOfBuffer]]
+
 
 --[[ require('kanagawa').setup({ statementStyle = "NONE" })
 
@@ -608,4 +611,5 @@ augroup xmlgroup
     autocmd FileType xml setlocal tabstop=2 shiftwidth=2 softtabstop=2
 augroup END
 ]])
+
 
