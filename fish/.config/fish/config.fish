@@ -1,7 +1,7 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
     set fish_greeting
-    alias v="nvim"
+    # alias v="nvim"
     alias vrc="nvim ~/.config/nvim/init.lua"
     export EDITOR=/usr/bin/nvim
     export SUDO_EDITOR=/usr/bin/nvim
